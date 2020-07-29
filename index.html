@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="styles.css" />
+
+  <head>
+    <meta charset="UTF-8" />
+    <title>PTree</title>
+    <div id="banner">
+      Pythagoras Tree Visualizer
+    </div>
+  </head>
+
+  <div id="sidebar">
+    <ul>
+      <li>Angle</li>
+      <li>Depth</li>
+      <li><button id="resetButton">Reset</button></li>
+    </ul>
+  </div>
+
+  <div id="angleSlideContainer">
+    <input
+      type="range"
+      min="30"
+      max="60"
+      value="45"
+      class="slider"
+      id="angleSlider"
+    />
+  </div>
+
+  <div id="depthSlideContainer">
+    <input
+      type="range"
+      min="1"
+      max="12"
+      value="9"
+      class="slider"
+      id="depthSlider"
+    />
+  </div>
+
+  <body id="body">
+    <canvas id="canvas"></canvas>
+    <script src="canvas.js"></script>
+  </body>
+</html>

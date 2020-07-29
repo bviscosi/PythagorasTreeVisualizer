@@ -1,0 +1,76 @@
+* {
+  font-family: sans-serif;
+  padding: 0;
+}
+
+#banner {
+  color: white;
+  background-color: black;
+  border: 1px solid #2b2b2b;
+  padding: 10px 10px;
+}
+#body {
+  margin: 0;
+  background: black;
+}
+#canvas {
+  padding: 25px;
+  border: 1px solid black;
+  background: black;
+}
+#sidebar {
+  position: absolute;
+  margin: 0px;
+  padding: 10px;
+  color: white;
+  width: 200px;
+  height: 100%;
+}
+#sidebar ul li {
+  list-style: none;
+  padding: 15px 10px;
+}
+#resetButton {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+}
+#resetButton:focus {
+  border: none;
+  outline: none;
+}
+
+#angleSlideContainer {
+  margin-top: 22px;
+  padding: 15px 100px;
+}
+
+#depthSlideContainer {
+  padding: 15px 100px;
+}
+
+.slider {
+  -webkit-appearance: none; /* Override default CSS styles */
+  appearance: none;
+  width: 16%; /* Full-width */
+  height: 1px; /* Specified height */
+  background: white; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: 0.5s; /* 0.2 seconds transition on hover */
+  transition: opacity 0.5s;
+}
+
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 10px; /* Set a specific slider handle width */
+  height: 6px; /* Slider handle height */
+  background: white; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
