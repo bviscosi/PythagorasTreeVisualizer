@@ -4,7 +4,7 @@ var depthSlider = document.getElementById("depthSlider");
 var resetButton = document.getElementById("resetButton");
 
 canvas.width = window.innerWidth;
-canvas.height = window.innerHeight - 200;
+canvas.height = window.innerHeight;
 
 var c = canvas.getContext("2d");
 console.log(canvas);
